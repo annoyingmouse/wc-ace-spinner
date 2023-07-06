@@ -1,5 +1,5 @@
 index.html
-rollup.config.js
+rollup.config.mjs
 .prettierrc
 style/sakura.css
 .idea
