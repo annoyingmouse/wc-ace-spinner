@@ -1,6 +1,6 @@
 {
     "name": "@annoyingmouse/wc-ace-spinner",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "This web component creates a simple spinner.",
     "main": "wc-ace-spinner.js",
     "scripts": {
