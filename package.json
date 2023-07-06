@@ -1,0 +1,32 @@
+{
+    "name": "@annoyingmouse/wc-ace-spinner",
+    "version": "0.0.7",
+    "description": "This web component creates a simple spinner.",
+    "main": "wc-ace-spinner.js",
+    "scripts": {
+        "test": "echo \"No test specified\"",
+        "build": "rollup -c"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/annoyingmouse/wc-ace-spinner.git"
+    },
+    "keywords": [
+        "spinner",
+        "web-component"
+    ],
+    "author": "Dominic Myers",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/annoyingmouse/wc-ace-spinner/issues"
+    },
+    "homepage": "https://github.com/annoyingmouse/wc-ace-spinner#readme",
+    "prettier": {
+        "singleQuote": true,
+        "semi": false
+    },
+    "devDependencies": {
+        "@rollup/plugin-terser": "^0.4.3",
+        "rollup": "^3.26.1"
+    }
+}
