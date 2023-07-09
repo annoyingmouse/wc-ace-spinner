@@ -30,10 +30,49 @@
     </p>
     <p>Demo here: <a href="https://codepen.io/annoyingmouse/pen/eYQGNGO">https://codepen.io/annoyingmouse/pen/eYQGNGO</a></p>
     <p>A simple spinner component.</p>
-    <h2>Example</h2>
+    <h2>Installation</h2>
+    <pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>script</span><span style='color:#274796; '> </span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"module"</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"https://unpkg.com/@annoyingmouse/wc-ace-spinner/wc-ace-spinner.js"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>script</span><span style='color:#a65700; '>></span></pre>
+    <p>Alternatively:</p>
+    <pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>script</span><span style='color:#274796; '> </span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"module"</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"https://cdn.skypack.dev/@annoyingmouse/wc-ace-spinner/wc-ace-spinner.js"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>script</span><span style='color:#a65700; '>></span></pre>
+    <p>You can use it minified by adding using this instead:</p>
+    <pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>script</span><span style='color:#274796; '> </span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"module"</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"[WHATEVER CDN]/@annoyingmouse/wc-ace-spinner/dist/wc-ace-spinner.min.js"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>script</span><span style='color:#a65700; '>></span></pre>
+    <p>Please remember to change <code>[WHATEVER CDN]</code> to your favourite <abbr title="Content Delivery Network">CDN</abbr></p>
+    <h2>Configuration</h2>
+    <ul>
+      <li>Adding a <code>width</code> attribute allow you change the size of the element - it defaults to 100px by 100px, and valid number will change this.</li>
+      <li>Adding a <code>inner-colour</code> attribute with a HEX value will allow you to set the colour of the inner arc</li>
+      <li>Adding a <code>middle-colour</code> attribute with a HEX value will allow you to set the colour of the middle arc</li>
+      <li>Adding a <code>outer-colour</code> attribute with a HEX value will allow you to set the colour of the outer arc</li>
+    </ul>
+    
+    <h2>Example 01</h2>
     <div style="display: flex; align-items: center; justify-content: center;">
       <wc-ace-spinner></wc-ace-spinner>
     </div>
-    <script type="module" src="./dist/wc-ace-spinner.min.js"></script>
+    <hr>
+    <h2>Example 02</h2>
+    <p>Alter the width/height</p>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <wc-ace-spinner width="200"></wc-ace-spinner>
+    </div>
+    <hr>
+    <h2>Example 03</h2>
+    <p>Change the colours</p>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <wc-ace-spinner inner-colour="#DA2531"
+                      middle-colour="#DA7425"
+                      outer-colour="#DA258B"></wc-ace-spinner>
+    </div>
+    <hr>
+    <h2>Example 04</h2>
+    <p>Change the colours again</p>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <wc-ace-spinner inner-colour="#1CEB14"
+                      middle-colour="#14EB77"
+                      outer-colour="#88EB14"
+                      width="300"></wc-ace-spinner>
+    </div>
+    <hr>
+    <script type="module" src="./wc-ace-spinner.js"></script>
   </body>
 </html>
